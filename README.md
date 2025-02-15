@@ -2,7 +2,24 @@
 
 A sophisticated desktop application that streamlines Git operations through an elegant and intuitive interface. This tool empowers developers to manage their Git repositories efficiently without memorizing complex command-line syntax.
 
+<p align="center">
+  <img src="./images/git_2025-02-15_22-08-15.png" alt="Git Helper Screenshot" style="width: 80%;" />
+</p>
+
 ## ✨ Key Features
+
+<details>
+<summary> Preview </summary>
+
+<p align="center">
+  <img src="./images/git_2025-02-15_22-08-15.png" alt="Git Helper Screenshot" style="width: 80%;" />
+  <img src="./images/git_2025-02-15_22-09-03.png" alt="Git Helper Screenshot" style="width: 80%;" />
+  <img src="./images/git_2025-02-15_22-09-03.png" alt="Git Helper Screenshot" style="width: 80%;" />
+  <img src="./images/git_2025-02-15_22-09-25.png" alt="Git Helper Screenshot" style="width: 80%;" />
+  <img src="./images/git_2025-02-15_22-09-57.png" alt="Git Helper Screenshot" style="width: 80%;" />
+  <img src="./images/tag_2025-02-15_22-08-49.png" alt="Git Helper Screenshot" style="width: 80%;" />
+</p>
+</details>
 
 ## 📦 Repository Management
 - 🔄 Seamless integration of local Git repositories
