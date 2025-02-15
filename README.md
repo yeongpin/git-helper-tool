@@ -4,20 +4,20 @@ A sophisticated desktop application that streamlines Git operations through an e
 
 ## ✨ Key Features
 
-=== 📦 Repository Management ===
+## 📦 Repository Management
 - 🔄 Seamless integration of local Git repositories
 - ⚡ Intuitive repository creation workflow
 - 🌐 Efficient remote repository cloning
 - 🗑️ Smart repository removal (preserves local files)
 
-=== 🛠️ Core Operations ===
+## 🛠️ Core Operations
 - 📊 Real-time repository status monitoring
 - 💫 Streamlined commit workflow
 - 🔄 Automated push/pull synchronization
 - 🌿 Advanced branch management
 - 🏷️ Comprehensive tag operations
 
-=== 🎯 Advanced Features ===
+## 🎯 Advanced Features
 - 🔍 Real-time repository state monitoring
 - 💻 Integrated Git terminal
 - 📝 Detailed operation logging
@@ -35,25 +35,25 @@ A sophisticated desktop application that streamlines Git operations through an e
 ## 🚀 Development Setup
 
 1. 📥 Clone Repository
-===
-git clone https://github.com/yourusername/git-helper.git
+```
+git clone https://github.com/yeongpin/git-helper.git
 cd git-helper
-===
+```
 
 2. 📦 Install Dependencies
-===
+```
 npm install
-===
+```
 
 3. 🔥 Launch Development Server
-===
+```
 npm start
-===
+```
 
 ## 🏗️ Production Build
-===
+```
 npm run build
-===
+```
 
 ## 🏛️ Architecture
 
