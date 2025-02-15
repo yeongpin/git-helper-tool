@@ -1,0 +1,79 @@
+:root {
+    /* Colors */
+    --primary-color: #007AFF;
+    --secondary-color: #5856D6;
+    --background-color: #F5F5F7;
+    --background-color-dark: #9b9b9b;
+    --text-color: #1D1D1F;
+    --border-color: #D2D2D7;
+    
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+    --spacing-3xl: 64px;
+    
+    /* Font sizes */
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 24px;
+    
+    /* Border radius */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+} 
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+/* 當滾動條在深色背景上時 */
+.terminal-output::-webkit-scrollbar-track,
+.logs-content::-webkit-scrollbar-track {
+    background: #2d2d2d;
+}
+
+.terminal-output::-webkit-scrollbar-thumb,
+.logs-content::-webkit-scrollbar-thumb {
+    background: #444;
+}
+
+.terminal-output::-webkit-scrollbar-thumb:hover,
+.logs-content::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+/* 當滾動條在淺色背景上時 */
+.repo-list::-webkit-scrollbar-track {
+    background: #f5f5f7;
+}
+
+.repo-list::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+
+.repo-list::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}

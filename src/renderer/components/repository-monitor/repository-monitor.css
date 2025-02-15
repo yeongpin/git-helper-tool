@@ -1,0 +1,31 @@
+.repo-status {
+    margin-top: var(--spacing-sm);
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    margin-bottom: var(--spacing-xs);
+}
+
+.status-item.warning {
+    background-color: #FFF3DC;
+    color: #946800;
+}
+
+.status-item.info {
+    background-color: #E3F2FD;
+    color: #0055CC;
+}
+
+.status-item.success {
+    background-color: #E3FCEF;
+    color: #0A5554;
+}
+
+.status-icon {
+    font-size: 1.2em;
+} 

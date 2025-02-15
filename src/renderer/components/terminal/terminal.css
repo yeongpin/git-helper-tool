@@ -1,0 +1,33 @@
+.terminal-line {
+    padding: 2px 0;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.terminal-line.command {
+    color: #569cd6;
+    font-weight: bold;
+}
+
+.terminal-line.error {
+    color: #f44336;
+}
+
+.terminal-line.help {
+    color: #4caf50;
+}
+
+.terminal-clear,
+.logs-clear {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.terminal-clear:hover,
+.logs-clear:hover {
+    color: var(--text-color);
+} 

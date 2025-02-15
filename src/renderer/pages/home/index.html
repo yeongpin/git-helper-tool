@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'">
+    <title>Git Helper</title>
+    <link rel="stylesheet" href="../../styles/base/reset.css">
+    <link rel="stylesheet" href="../../styles/base/variables.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../components/modal/modal.css">
+    <link rel="stylesheet" href="../../components/notification/notification.css">
+</head>
+<body>
+    <div class="titlebar">
+        <h1 class="app-header-title">Git Helper</h1>
+        <div class="titlebar-controls">
+            <button id="notificationBtn" class="titlebar-btn">
+                <i class="notification-icon">🔔</i>
+            </button>
+            <button class="titlebar-minimize">一</button>
+            <button class="titlebar-maximize">口</button>
+            <button class="titlebar-close">✕</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <main class="app-main">
+            <section class="repositories-section">
+                <h2>Repositories</h2>
+                <div class="repositories-toolbar">
+                    <!-- Repository Manager 會在這裡添加按鈕和搜索框 -->
+                </div>
+                <div class="action-buttons">
+                    <button id="createRepoBtn">Create Repository</button>
+                    <button id="cloneRepoBtn">Clone Repository</button>
+                </div>
+                <div id="repoList" class="repo-list">
+                    <!-- Repositories will be listed here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modal Component -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script type="module" src="home.js"></script>
+</body>
+</html> 

@@ -1,0 +1,45 @@
+.tags-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+}
+
+.tags-list {
+    border-right: 1px solid var(--border-color);
+    padding-right: var(--spacing-lg);
+}
+
+.tag-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tag-name {
+    font-family: monospace;
+    font-size: var(--font-size-md);
+}
+
+.tag-actions {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.create-tag-form {
+    padding-left: var(--spacing-lg);
+}
+
+.create-tag-form h3 {
+    margin-bottom: var(--spacing-md);
+}
+
+#tagMessage {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+    padding: var(--spacing-sm);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+} 

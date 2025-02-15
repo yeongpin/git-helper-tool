@@ -1,0 +1,144 @@
+/* 添加 body 樣式控制 */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  /* 防止body出現滾動條 */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.titlebar {
+    -webkit-app-region: drag;
+    height: 32px;
+    background: #2d2d2d;  /* 深灰色背景 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1e1e1e;  /* 更深的邊框 */
+}
+
+.titlebar-text {
+    color: #d4d4d4;  /* 淺灰色文字 */
+    font-size: var(--font-size-md);
+    font-weight: 400;
+    padding: 0 var(--spacing-md);
+}
+
+.titlebar-controls {
+    -webkit-app-region: no-drag;
+    display: flex;
+    align-items: center;
+}
+
+.titlebar-close {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #d4d4d4;  /* 淺灰色圖標 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 46px;
+    height: 32px;
+    transition: all 0.2s;
+}
+
+.titlebar-close:hover {
+    background-color: #e81123;  /* Windows 風格的紅色 */
+    color: white;
+}
+
+.notification-list {
+    padding: var(--spacing-md);
+    overflow-y: auto;
+    flex: 1;  /* 使用 flex 佈局自動填充剩餘空間 */
+    background-color: white;
+}
+
+.notification-item {
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    border-radius: var(--border-radius-md);
+    background-color: var(--background-color);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.notification-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.notification-time {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.notification-time::before {
+    content: "🕒";
+    font-size: 12px;
+}
+
+.notification-message {
+    color: var(--text-color);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.notification-type {
+    font-size: var(--font-size-sm);
+    padding: 4px 8px;
+    border-radius: var(--border-radius-sm);
+    align-self: flex-start;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.notification-type.success {
+    background-color: #e3fcef;
+    color: #0a5554;
+    border: 1px solid #34C759;
+}
+
+.notification-type.error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #FF3B30;
+}
+
+/* 添加分隔線效果 */
+.notification-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: var(--spacing-lg);
+    right: var(--spacing-lg);
+    height: 1px;
+    background-color: var(--border-color);
+}
+
+/* 添加滾動條樣式 */
+.notification-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.notification-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.notification-list::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+.notification-list::-webkit-scrollbar-thumb:hover {
+    background-color: #ccc;
+} 

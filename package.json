@@ -1,0 +1,28 @@
+{
+  "name": "git-helper",
+  "version": "1.0.0",
+  "description": "A simple Git GUI tool",
+  "main": "./src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "simple-git": "^3.22.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.githelper.app",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "package.json"
+    ]
+  }
+} 
