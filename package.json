@@ -1,9 +1,13 @@
 {
-  "name": "git-helper",
+  "name": "git-helper-tool",
   "version": "1.0.0",
   "description": "A sophisticated desktop application for Git operations management",
   "main": "src/main/main.js",
   "author": "yeongpin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yeongpin/git-helper-tool.git"
+  },
   "scripts": {
     "start": "electron .",
     "build": "electron-builder --publish never",
