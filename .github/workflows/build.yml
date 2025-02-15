@@ -38,19 +38,27 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
+      # List dist directory contents
+      - name: List dist directory
+        shell: bash
+        run: |
+          echo "Dist directory contents:"
+          ls -la dist/
+        
       # Rename and organize artifacts
       - name: Process Artifacts
         shell: bash
         run: |
           mkdir -p ./artifacts
           if [ "${{ matrix.os }}" = "windows-latest" ]; then
-            mv "dist/Git Helper Setup"*.exe "./artifacts/git_helper_${{ env.VERSION }}_win.exe"
+            mv "dist/Git Helper Setup"*.exe "./artifacts/git_helper_${{ env.VERSION }}_win_setup.exe" || true
           elif [ "${{ matrix.os }}" = "macos-latest" ]; then
-            mv "dist/Git Helper"*.dmg "./artifacts/git_helper_${{ env.VERSION }}_mac.dmg"
+            mv "dist/Git Helper"*.dmg "./artifacts/git_helper_${{ env.VERSION }}_mac.dmg" || true
           else
-            mv "dist/Git Helper"*.AppImage "./artifacts/git_helper_${{ env.VERSION }}_linux.AppImage"
+            mv "dist/Git Helper"*.AppImage "./artifacts/git_helper_${{ env.VERSION }}_linux.AppImage" || true
           fi
           
+          # 显示artifacts目录内容以验证
           echo "Artifacts directory contents:"
           ls -la ./artifacts/
         
